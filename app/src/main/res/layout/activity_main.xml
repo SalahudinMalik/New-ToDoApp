@@ -50,6 +50,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:onClick="onClick"
+        android:foregroundGravity="bottom"
         android:src="@drawable/if_add"
         />
         </RelativeLayout>
