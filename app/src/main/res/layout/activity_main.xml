@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/bg"
+    tools:context="com.example.gallantgames.quizapp.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="430dp"
+                android:id="@+id/listView"
+                android:padding="1dp"
+                android:background="@drawable/customshape"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8.0sp"
+               />
+
+            <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/listView"
+        android:layout_margin="3dp"
+        android:id="@+id/etBox"
+        android:background="@drawable/editbox"
+        android:padding="10dp"
+                android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:hint="WRITE YOUR TASK" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"
+        android:src="@drawable/if_add"
+        />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
